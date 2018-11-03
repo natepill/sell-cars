@@ -4,7 +4,7 @@ This app is intended to help with their budget and/ or file for bankruptcy
 
 **Sell My Car**  Is an application created with Node, Express, MongoDB, Mongoose, and D3.js.
 
-Official documentation: https://kendrajmoore.github.io/bankruptcy-app/
+Official documentation: https://kendrajmoore.github.io/sell-cars/
 
 Official website: https://fin-app-kjm.herokuapp.com/
 
