@@ -1,0 +1,87 @@
+{{> header}}
+  {{> nav}}
+      <h1>Car Survey</h1>
+       <div style="width: 30%; margin: 25px auto;">
+      <form action="/survey" method="POST">
+          <div class="form-group">
+              <label for="carOwnership">Do you own a car? </label></br>
+              <input type="text" name="carOwnership" placeholder="" /><br/>
+              <label for="parking">Do you pay for parking?: </label></br>
+              <input type="text" name="housingName" placeholder="Expense Name" /><br/>
+               <label for="expense">Dollar Amount: </label></br>
+              <input type="number" name="housingAmount" placeholder="Dollars" /><br>
+              <label for="expense">Category: </label></br>
+               <input type="text" name="housingCategory" placeholder="housingCategory" /><br/>
+          </div>
+          <br>
+          <br>
+          <div class="form-group">
+              <h3><strong>Food</strong></h3>
+              <label for="expense">Expense: </label></br>
+              <input type="text" name="foodName" placeholder="Expense Name" /><br/>
+               <label for="expense">Dollar Amount: </label></br>
+              <input type="number" name="foodAmount" placeholder="Dollars" /><br>
+              <label for="expense">Category: </label></br>
+               <input type="text" name="foodCategory" placeholder="category" /><br/>
+          </div>
+          <br>
+          <br>
+          <div class="form-group">
+              <h3><strong>Transporation</strong></h3>
+              <label for="expense">Expense: </label></br>
+              <input type="text" name="transportationName" placeholder="Expense Name" /><br/>
+               <label for="expense">Dollar Amount: </label></br>
+              <input type="number" name="transportationAmount" placeholder="Dollars" /><br>
+              <label for="expense">Category: </label></br>
+               <input type="text" name="transportationCategory" placeholder="Category" /><br/>
+          </div>
+          <br>
+          <br>
+          <div class="form-group">
+              <h3><strong>Insurance</strong></h3>
+              <label for="expense">Expense: </label></br>
+              <input type="text" name="insuranceName" placeholder="Expense Name" /><br/>
+               <label for="expense">Dollar Amount: </label></br>
+              <input type="number" name="insuranceAmount" placeholder="Dollar" /><br>
+              <label for="expense">Category: </label></br>
+               <input type="text" name="insuranceCategory" placeholder="category" /><br/>
+          </div>
+          <br>
+          <br>
+          <div class="form-group">
+              <h3><strong>Clothing</strong></h3>
+              <label for="expense">Expense: </label></br>
+              <input type="text" name="clothingName" placeholder="Expense Name" /><br/>
+               <label for="expense">Dollar Amount: </label></br>
+              <input type="number" name="clothingAmount" placeholder="Dollar" /><br>
+              <label for="expense">Category: </label></br>
+               <input type="text" name="clothingCategory" placeholder="category" /><br/>
+          </div>
+          <br>
+          <br>
+          <div class="form-group">
+              <h3><strong>Entertainment</strong></h3>
+              <label for="expense">Expense: </label></br>
+              <input type="text" name="entertainmentName" placeholder="Expense Name" /><br/>
+               <label for="expense">Dollar Amount: </label></br>
+              <input type="number" name="entertainmentAmount" placeholder="Dollars" /><br>
+              <label for="expense">Category: </label></br>
+               <input type="text" name="entertainmentCategory" placeholder="category" /><br/>
+          </div>
+          <br>
+          <br>
+          <div class="form-group">
+              <h3><strong>Savings</strong></h3>
+              <label for="expense">Expense: </label></br>
+              <input type="text" name="savingName" placeholder="Expense Name" /><br/>
+               <label for="expense">Dollar Amount: </label></br>
+              <input type="number" name="savingAmount" placeholder="Dollar" /><br>
+              <label for="expense">Category: </label></br>
+               <input type="text" name="savingCategory" placeholder="category" /><br/>
+          </div>
+          <br>
+          <br>
+          <button type="submit" class="button is-success">Save</button>
+
+      </form>
+  </div>

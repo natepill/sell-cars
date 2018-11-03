@@ -30,6 +30,9 @@ app.engine("hbs", hbs({ defaultLayout: "main", extname: "hbs" }));
 app.set("view engine", "hbs");
 
 
+const surveyController = require("./controllers/surveys.js");
+app.use("/survey", surveyController);
+
 
 // Mongoose Connection
 const mongoUri =
