@@ -25,7 +25,7 @@ router.post("/", (req, res) => {
 router.get("/:id", (req, res) => {
     Survey.findById(req.params.id).then(survey => {
         res.render("survey/show.hbs", {
-            survey: survey
+         survey
         }).catch(err => {
             res.status(400).send(err.message);
             console.log(err.message);
@@ -51,7 +51,7 @@ router.put("/:id", (req, res) => {
 //  delete
 router.delete("/:id", (req, res) => {
     Survey.findByIdAndRemove(req.params.id, (err, survey) => {
-        res.status(200).redirect("/survey");
+        res.redirect("/survey/" + survey._id);
     }).catch(err => {
         res.status(400).send(error.message);
         console.log(err.message);
