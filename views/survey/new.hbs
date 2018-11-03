@@ -4,15 +4,24 @@
        <div style="width: 30%; margin: 25px auto;">
       <form action="/survey" method="POST">
           <div class="form-group">
-              <h3>Car Ownership</h3>
+
+          <h3>Car Ownership</h3>
               <label for="carOwnership">Do you own a car? </label></br>
-              <input type="text" name="carOwnership" placeholder="" /><br/>
+              <select name="carOwnership">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+            </select>
+             <br/>
         </div>
         <br>
         <div class="form-group">
              <h3>Parking</h3>
             <label for="parkingBoolean">Do you pay for parking? </label></br>
-            <input type="text" name="parkingBoolean" placeholder="" /><br/>
+            <select name="parkingBoolean">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+          </select>
+          <br>
             <label for="parkingPayment">How much do you pay for parking? </label></br>
             <input type="text" name="parkingPayment" placeholder="" /><br/>
       </div>
@@ -20,7 +29,11 @@
       <div class="form-group">
            <h3>Insurance</h3>
           <label for="insuranceBoolean">Do you pay for car insurance? </label></br>
-          <input type="text" name="insuranceBoolean" placeholder="" /><br/>
+          <select name="parkingBoolean">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+        </select>
+        <br>
           <label for="insurancePayment">How much do you pay for car insurance? </label></br>
           <input type="text" name="insurancePayment" placeholder="" /><br/>
     </div>
@@ -28,7 +41,11 @@
         <div class="form-group">
              <h3>Fuel</h3>
             <label for="powerBoolean">Do you pay for diesel/gas/supercharging? </label></br>
-            <input type="text" name="powerBoolean" placeholder="" /><br/>
+            <select name="powerBoolean">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+          </select>
+          <br>
             <label for="powerPayment">How much do you pay for diesel/gas/supercharging? </label></br>
             <input type="text" name="powerPayment" placeholder="" /><br/>
       </div>
@@ -36,9 +53,17 @@
       <div class="form-group">
            <h3>Work</h3>
           <label for="workBoolean">Do you work from home? </label></br>
-          <input type="text" name="workBoolean" placeholder="" /><br/>
+          <select name="workBoolean">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+        </select>
+        <br>
           <label for="carWorkBoolean">Do you use your car for work? </label></br>
-          <input type="text" name="carWorkBoolean" placeholder="" /><br/>
+          <select name="carWorkBoolean">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+        </select>
+        <br>
           <label for="workMiles">How far do you travel for work? </label></br>
           <input type="text" name="workMiles" placeholder="" /><br/>
     </div>
@@ -46,7 +71,11 @@
     <div class="form-group">
          <h3>Car Ownership</h3>
         <label for="vacationBoolean">Do you drive a car for vacations? </label></br>
-        <input type="text" name="vacationBoolean" placeholder="" /><br/>
+        <select name="vacationBoolean">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+      </select>
+      <br>
         <label for="vacationFrequency">How often do you travel for vacations? </label></br>
         <input type="text" name="vacationFrequency" placeholder="" /><br/>
         <label for="vacationMiles">How far do you travel for vacations? </label></br>
