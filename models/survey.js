@@ -2,19 +2,20 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const SurveySchema = new Schema({
-    incomeBankruptcy: { type: Number, default: 0 },
-    taxBankruptcy: { type: Number, default: 0 },
-    mortageBankruptcy: { type: Number, default: 0 },
-    rentBankruptcy: { type: Number, default: 0 },
-    homeBankruptcy: { type: Number, default: 0 },
-    carBankruptcy: { type: Number, default: 0 },
-    insuranceBankruptcy: { type: String, default: "No" },
-    medicalBankruptcy: { type: Number, default: 0 },
-    legalBankruptcy: { type: String, default: "No" },
-    pendingBankruptcy: { type: Number, default: 0 },
-    pendingLegalBankruptcy: { type: Number, default: 0 },
-    savingBankruptcy: { type: Number, default: 0 },
-    totalSavingBankruptcy: { type: Number, default: 0 }
+    carOwnership: String,
+    parkingBoolean: String,
+    parkingPayment: Number,
+    insuranceBoolean: String,
+    parkingBoolean: String,
+    insurancePayment: Number,
+    powerBoolean: String,
+    powerPayment: Number,
+    workBoolean: String,
+    carWorkBoolean: String,
+    workMiles: Number,
+    vacationBoolean: String,
+    vacationFrequency: Number,
+    vacationMiles: Number
 });
 
 module.exports = mongoose.model("Survey", SurveySchema);
