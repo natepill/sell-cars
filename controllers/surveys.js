@@ -4,34 +4,10 @@ const router = express.Router();
 
 const Survey = require("../models/survey.js");
 
-// const User = require("../models/users.js");
-//
-// const ObjectId = require("mongoose").Types.ObjectId;
-
-//index;
-// router.get("/", (req, res) => {
-//     const currentUser = req.user;
-//     if (currentUser === null) {
-//         return res.redirect("/user/login");
-//     }
-//     Survey.find({})
-//         .then(survey => {
-//             res.render("survey/index.hbs", { survey, currentUser });
-//         })
-//         .catch(err => {
-//             res.status(400).send(err.message);
-//             console.log(err.message);
-//         });
-// });
 
 // new
 router.get("/new", (req, res) => {
-    // const currentUser = req.user;
-    // if (currentUser === null) {
-    //     res.redirect("/user/login");
-    // } else {
         res.status(200).render("survey/new.hbs");
-    // }
 });
 // });
 
@@ -47,10 +23,6 @@ router.post("/", (req, res) => {
 
 // show
 router.get("/:id", (req, res) => {
-    // const currentUser = req.user;
-    // if (!currentUser) {
-    //     res.redirect("/user/login");
-    // }
     Survey.findById(req.params.id).then(survey => {
         res.render("survey/show.hbs", {
             survey: survey
@@ -69,10 +41,6 @@ router.get("/:id/edit", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-    // const currentUser = req.user;
-    // if (!currentUser) {
-    //     res.redirect("/user/login");
-    // }
     Survey.findByIdAndUpdate(req.params.id, req.body, (err, survey) => {
         res.status(200).redirect("/");
     }).catch(err => {
@@ -82,10 +50,6 @@ router.put("/:id", (req, res) => {
 });
 //  delete
 router.delete("/:id", (req, res) => {
-    // const currentUser = req.user;
-    // if (!currentUser) {
-    //     res.redirect("/user/login");
-    // }
     Survey.findByIdAndRemove(req.params.id, (err, survey) => {
         res.status(200).redirect("/survey");
     }).catch(err => {

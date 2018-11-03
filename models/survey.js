@@ -6,7 +6,6 @@ const SurveySchema = new Schema({
     parkingBoolean: String,
     parkingPayment: Number,
     insuranceBoolean: String,
-    parkingBoolean: String,
     insurancePayment: Number,
     powerBoolean: String,
     powerPayment: Number,

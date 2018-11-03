@@ -1,0 +1,27 @@
+{{> header}}
+{{> nav}}
+<div class="show">
+
+         <h3>Car Ownership</h3>
+<h3>Car Ownership: {{survey.carOwnership}}</h3>
+<h3>Parking: {{survey.parkingBoolean}}<br>
+ {{survey.parkingPayment}}</h3>
+<h3>Insurance: {{survey.insuranceBoolean}}<br>
+ {{survey.insurancePayment}}</h3>
+<h3>Fuel: {{survey.powerBoolean}}<br>
+ {{survey.powerPayment}}</h3>
+<h3>Work: {{survey.workBoolean}}<br>
+ {{survey.carWorkBoolean}}<br>
+{{survey.workMiles}}</h3>
+<h3>Vacations: {{survey.vacationBoolean}}<br>
+ {{survey.vacationFrequency}}<br>
+ {{survey.vacationMiles}}</h3>
+
+<!-- <input id="surveyId" hidden value={{survey._id}} /> -->
+<!-- <div id="chart"></div> -->
+<p><a class="button is-success" href="/survey/{{survey._id}}/edit">Edit</a></p>
+      <a class="button is-link" href="/survey/new">Back</a><br>
+       <p><form method="POST" action="/survey/{{survey._id}}?_method=DELETE">
+          <button class="button is-danger" type="submit">Delete</button>
+      </form></p>
+</div>
