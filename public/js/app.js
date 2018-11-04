@@ -1,5 +1,5 @@
 //Get Budget Data
-let budgetId = document.getElementById('surveyId').value;
+let surveyId = document.getElementById('surveyId').value;
 axios.get(`/survey/${surveyId}/api`).then((response) => {
 
     // Data

@@ -4,6 +4,8 @@ const router = express.Router();
 
 const Survey = require("../models/survey.js");
 
+const ObjectId = require("mongoose").Types.ObjectId;
+
 
 // new
 router.get("/new", (req, res) => {
@@ -25,7 +27,7 @@ router.post("/", (req, res) => {
 router.get("/:id", (req, res) => {
     Survey.findById(req.params.id).then(survey => {
         res.render("survey/show.hbs", {
-         survey
+            survey: survey
         }).catch(err => {
             res.status(400).send(err.message);
             console.log(err.message);
@@ -60,13 +62,13 @@ router.delete("/:id", (req, res) => {
 
 //char
 //
-// router.get("/:id/api", (req, res) => {
-//     Budget.findById(req.params.id).then(budget => {
-//         if(budget){
-//             console.log(budget);
-//             res.send(budget)
-//         }
-//     })
-// })
+router.get("/:id/api", (req, res) => {
+    Survey.findById(req.params.id).then(survey => {
+        if(survey){
+            console.log(survey);
+            res.send(survey)
+        }
+    })
+})
 
 module.exports = router;

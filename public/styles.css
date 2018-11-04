@@ -24,3 +24,9 @@ a.button.is-link {
     left: 650px;
     bottom: -100px;
 }
+#chart{
+    width: 600px;
+    height: 600px;
+    background-color: #f7f7f7;
+    margin: 25px auto;
+}
