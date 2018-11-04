@@ -12,3 +12,15 @@ h3 {
     margin: 50px 0 0 10px;
     font-weight: bold;
 }
+
+h1.homepage {
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+
+}
+
+a.button.is-link {
+    left: 650px;
+    bottom: -100px;
+}

@@ -6,25 +6,25 @@ This app is intended to help with their budget and/ or file for bankruptcy
 
 Official documentation: https://kendrajmoore.github.io/sell-cars/
 
-Official website: https://fin-app-kjm.herokuapp.com/
+Official website: https://sell-car-kjm.herokuapp.com/
 
 ## Base URL
 
 ```
-https://fin-app-kjm.herokuapp.com/
+https://sell-car-kjm.herokuapp.com/
 ```
 
 The base url contains information about all available API's resources. All responses will return data in json.
 
-There is one available resources
+There is one available resource
 
--   Budget: CRUD a budget
+-   Budget: CRUD a survey
 
 ```
-https://fin-app-kjm.herokuapp.com/budget/
-https://fin-app-kjm.herokuapp.com/budget/new
-https://fin-app-kjm.herokuapp.com/budget/:id/edit
-https://fin-app-kjm.herokuapp.com/budget/:id/delete
+https://sell-car-kjm.herokuapp.com/survey
+https://sell-car-kjm.herokuapp.com/survey/new
+https://sell-car-kjm.herokuapp.com/survey/:id/edit
+https://sell-car-kjm.herokuapp.com/survey/:id/delete
 ```
 
 ## Installation
@@ -41,4 +41,4 @@ $ nodemon
 
 ## Project Team
 
-Created by Kendra Moore for the term 1 intensive at Make School
+Created by Kendra Moore for Make School
