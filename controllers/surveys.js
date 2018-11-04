@@ -26,9 +26,8 @@ router.post("/", (req, res) => {
 // show
 router.get("/:id", (req, res) => {
     Survey.findById(req.params.id).then(survey => {
-        res.render("survey/show.hbs", {
-            survey: survey
-        }).catch(err => {
+        console.log(survey);
+        res.render("survey/show.hbs", { survey }).catch(err => {
             res.status(400).send(err.message);
             console.log(err.message);
         });
@@ -62,13 +61,17 @@ router.delete("/:id", (req, res) => {
 
 //char
 //
+console.log("here");
 router.get("/:id/api", (req, res) => {
     Survey.findById(req.params.id).then(survey => {
         if(survey){
+            console.log('************');
             console.log(survey);
+            console.log('************');
             res.send(survey)
         }
     })
 })
 
+console.log('here2');
 module.exports = router;
