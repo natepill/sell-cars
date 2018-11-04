@@ -14,7 +14,8 @@ const SurveySchema = new Schema({
     workMiles: Number,
     vacationBoolean: String,
     vacationFrequency: Number,
-    vacationMiles: Number
+    vacationMiles: Number,
+    surveyDate: { type: Date, default: 2018 }
 });
 
 module.exports = mongoose.model("Survey", SurveySchema);
