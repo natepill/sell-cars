@@ -25,8 +25,8 @@ a.button.is-link {
     bottom: -100px;
 }
 #chart{
-    width: 600px;
-    height: 600px;
+    width: 1000px;
+    height: 800px;
     background-color: #f7f7f7;
     margin: 25px auto;
 }
