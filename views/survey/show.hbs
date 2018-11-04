@@ -17,8 +17,8 @@
  {{survey.vacationFrequency}}<br>
  {{survey.vacationMiles}}</h3>
 
-<!-- <input id="surveyId" hidden value={{survey._id}} /> -->
-<!-- <div id="chart"></div> -->
+<input id="surveyId" hidden value={{survey._id}} /> 
+<div id="chart"></div>
 <p><a class="button is-success" href="/survey/{{survey._id}}/edit">Edit</a></p>
       <a class="button is-link" href="/survey/new">Back</a><br>
        <p><form method="POST" action="/survey/{{survey._id}}?_method=DELETE">
