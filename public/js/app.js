@@ -1,5 +1,8 @@
+let surveyId = document.getElementById('surveyId').value;
+axios.get(`/survey/${surveyId}/api`).then((response) => {
+
 // Data
-var data            =   [ 35, 6, 20, 47, 19 ];
+var data            =   [ response.data.parkingPayment, response.data.insurancePayment, response.data.powerPayment];
 var chart_width     =   600;
 var chart_height    =   600;
 var color           =   d3.scaleOrdinal( d3.schemeCategory10 );
@@ -47,3 +50,7 @@ arcs.append( 'text' )
     .text(function(d){
         return d.value;
     });
+    console.log(response.data);
+}).catch((err) => {
+console.log(err);
+})

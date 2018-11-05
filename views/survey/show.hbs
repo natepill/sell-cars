@@ -2,19 +2,24 @@
 {{> nav}}
 <div class="show">
 
-         <h3>Car Ownership</h3>
+         <h3>Car Ownership Survey</h3>
 <h3>Car Ownership: {{survey.carOwnership}}</h3>
-<h3>Parking: {{survey.parkingBoolean}}<br>
- {{survey.parkingPayment}}</h3>
-<h3>Insurance: {{survey.insuranceBoolean}}<br>
+<h3>Parking Expenses: {{survey.parkingBoolean}}<br>
+ Average paid per month: {{survey.parkingPayment}}</h3>
+<h3>Insurance Expenses: {{survey.insuranceBoolean}}<br>
+    Average paid per month:
  {{survey.insurancePayment}}</h3>
-<h3>Fuel: {{survey.powerBoolean}}<br>
+<h3>Fuel Expenses: {{survey.powerBoolean}}<br>
+    Average paid per month:
  {{survey.powerPayment}}</h3>
-<h3>Work: {{survey.workBoolean}}<br>
+<h3>Work Travel Expenses: {{survey.workBoolean}}<br>
  {{survey.carWorkBoolean}}<br>
+ Average miles per month
 {{survey.workMiles}}</h3>
-<h3>Vacations: {{survey.vacationBoolean}}<br>
+<h3>Vacations Travel Expenses : {{survey.vacationBoolean}}<br>
+     Average vacation days per month
  {{survey.vacationFrequency}}<br>
+  Average miles per vacation day
  {{survey.vacationMiles}}</h3>
 
 <input id="surveyId" hidden value={{survey._id}} />
