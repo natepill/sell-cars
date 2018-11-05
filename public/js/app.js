@@ -46,5 +46,4 @@ arcs.append( 'text' )
     .attr( 'text-anchor', 'text-middle' )
     .text(function(d){
         return d.value;
-    });err);
-})
+    });
