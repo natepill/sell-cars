@@ -19,9 +19,10 @@ router.post("/", (req, res) => {
     const survey = new Survey(req.body);
     survey.save();
     if (req.body.carOwnership == "No") {
-        res.render("survey/nocar.hbs")
-    }
+        res.render("survey/nocar.hbs", {})
+    } else {
     res.redirect("/survey/" + survey._id);
+}
 });
 
 
