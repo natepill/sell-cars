@@ -44,7 +44,7 @@ mongoose.connect(
 
 //index page
 app.get("/", (req, res) => {
-    res.render("homepage.hbs");
+    res.render("survey/new.hbs");
 });
 
 //404 page
