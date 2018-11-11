@@ -1,5 +1,13 @@
 {{> header}}
   {{> nav}}
+  <script>
+function disable() {
+    document.getElementById("mySelect").disabled=true;
+}
+function enable() {
+    document.getElementById("mySelect").disabled=false;
+}
+</script>
       <h1>Car Survey</h1>
        <div class="container">
        <div style=" margin: 5px auto;">
@@ -11,11 +19,13 @@
 
           <h3>Car Ownership</h3>
               <label for="carOwnership">Do you own a car? </label></br>
-              <select name="carOwnership">
+              <select id="mySelect">
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
             </select>
              <br/>
+             <input type="button" onclick="disable()" value="Disable list">
+             <input type="button" onclick="enable()" value="Enable list">
         </div>
         <div class="form-group">
              <h3>Parking</h3>
@@ -51,6 +61,7 @@
           <br>
             <label for="powerPayment">How much do you pay for diesel/gas/supercharging per month? </label></br>
             <input type="text" name="powerPayment" placeholder="" /><br/>
+            <button type="submit" class="button is-success">Submit</button>
       </div>
       <br>
       <div class="form-group">
@@ -84,10 +95,6 @@
         <label for="vacationMiles">How far do you travel in miles for vacations per day? </label></br>
         <input type="text" name="vacationMiles" placeholder="" /><br/>
     </div>
-
-
-
-          <button type="submit" class="button is-success">Submit</button>
 
       </form>
   </div>
