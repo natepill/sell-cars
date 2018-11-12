@@ -10,91 +10,85 @@ function enable() {
 </script>
       <h1>Car Survey</h1>
        <div class="container">
-       <div style=" margin: 5px auto;">
       <form action="/survey" method="POST">
-
+      <br>
+      <br>
+    <div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Car Ownership</h5>
+      <p class="card-text">Do you own a car?</p>
+      <select id="mySelect">
+             <option value="Yes">Yes</option>
+             <option value="No">No</option>
+       </select>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Parking</h5>
+      <p class="card-text">Do you pay for parking</p>
+      <select name="parkingBoolean">
+             <option value="Yes">Yes</option>
+             <option value="No">No</option>
+       </select>
+       <label for="parkingPayment">How much do you pay for parking per month? </label></br>
+     <input type="text" name="parkingPayment" placeholder="" />
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Insurance</h5>
+      <p class="card-text">Do you pay for car insurance?</p>
+      <select name="insuranceBoolean">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+        </select>
+        <label for="insurancePayment">How much do you pay for car insurance per month? </label></br>
+        <input type="text" name="insurancePayment" placeholder=""  />
+    </div>
+  </div>
 </div>
-
-          <div class="form-group">
-
-          <h3>Car Ownership</h3>
-              <label for="carOwnership">Do you own a car? </label></br>
-              <select id="mySelect">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-            </select>
-             <br/>
-             <input type="button" onclick="disable()" value="Disable list">
-             <input type="button" onclick="enable()" value="Enable list">
-        </div>
-        <div class="form-group">
-             <h3>Parking</h3>
-            <label for="parkingBoolean">Do you pay for parking? </label></br>
-            <select name="parkingBoolean">
+<br>
+<br>
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Fuel</h5>
+      <p class="card-text">Do you pay for diesel/gas/supercharging? </p>
+      <select name="powerBoolean">
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
           </select>
-          <br>
-            <label for="parkingPayment">How much do you pay for parking per month? </label></br>
-            <input type="text" name="parkingPayment" placeholder="" /><br/>
-      </div>
-      <br>
-      <div class="form-group">
-           <h3>Insurance</h3>
-          <label for="insuranceBoolean">Do you pay for car insurance? </label></br>
-          <select name="insuranceBoolean">
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-        </select>
-        <br>
-          <label for="insurancePayment">How much do you pay for car insurance per month? </label></br>
-          <input type="text" name="insurancePayment" placeholder=""  /><br/>
+          <label for="powerPayment">How much do you pay for diesel/gas/supercharging per month? </label></br>
+           <input type="text" name="powerPayment" placeholder="" /><br/>
     </div>
-    <br>
-        <div class="form-group">
-             <h3>Fuel</h3>
-            <label for="powerBoolean">Do you pay for diesel/gas/supercharging? </label></br>
-            <select name="powerBoolean">
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-          </select>
-          <br>
-            <label for="powerPayment">How much do you pay for diesel/gas/supercharging per month? </label></br>
-            <input type="text" name="powerPayment" placeholder="" /><br/>
-            <button type="submit" class="button is-success">Submit</button>
-      </div>
-      <br>
-      <div class="form-group">
-           <h3>Work</h3>
-          <label for="workBoolean">Do you work from home? </label></br>
-          <select name="workBoolean">
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-        </select>
-        <br>
-          <label for="carWorkBoolean">Do you use your car for work? </label></br>
-          <select name="carWorkBoolean">
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-        </select>
-        <br>
-          <label for="workMiles">How far do you travel for work per month in miles? </label></br>
-          <input type="text" name="workMiles" placeholder="" /><br/>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Work</h5>
+      <p class="card-text">Do you work from home? </p>
+      <select name="workBoolean">
+           <option value="Yes">Yes</option>
+           <option value="No">No</option>
+     </select>
+     <label for="carWorkBoolean">Do you use your car for work? </label></br>
+<select name="carWorkBoolean">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+</select>
+<br>
+<label for="workMiles">How far do you travel for work per month in miles? </label></br>
+<input type="text" name="workMiles" placeholder="" /><br/>
     </div>
-    <br>
-    <div class="form-group">
-         <h3>Car Ownership</h3>
-        <label for="vacationBoolean">Do you drive a car for vacations? </label></br>
-        <select name="vacationBoolean">
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-      </select>
-      <br>
-        <label for="vacationFrequency">How often do you travel for vacations per month? </label></br>
-        <input type="text" name="vacationFrequency" placeholder="" /><br/>
-        <label for="vacationMiles">How far do you travel in miles for vacations per day? </label></br>
-        <input type="text" name="vacationMiles" placeholder="" /><br/>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
     </div>
+  </div>
+</div>
 
       </form>
   </div>
