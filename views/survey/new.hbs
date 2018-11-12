@@ -1,13 +1,5 @@
 {{> header}}
   {{> nav}}
-  <script>
-function disable() {
-    document.getElementById("mySelect").disabled=true;
-}
-function enable() {
-    document.getElementById("mySelect").disabled=false;
-}
-</script>
       <h1>Car Survey</h1>
        <div class="container">
       <form action="/survey" method="POST">
@@ -28,11 +20,14 @@ function enable() {
     <div class="card-body">
       <h5 class="card-title">Parking</h5>
       <p class="card-text">Do you pay for parking</p>
-      <select name="parkingBoolean">
-             <option value="Yes">Yes</option>
-             <option value="No">No</option>
-       </select>
+      <input id="allow-drinks" type="checkbox"/>
        <label for="parkingPayment">How much do you pay for parking per month? </label></br>
+       <select id="drink-select" disabled>
+      <option value="1">Water</option>
+      <option value="2">Beer</option>
+      <option value="3">Pepsi</option>
+      <option value="4">Whisky</option>
+    </select>
      <input type="text" name="parkingPayment" placeholder="" />
     </div>
   </div>
