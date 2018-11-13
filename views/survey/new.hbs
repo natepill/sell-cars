@@ -1,98 +1,88 @@
 {{> header}}
-  {{> nav}}
-      <h1>Car Survey</h1>
-       <div class="container">
-      <form action="/survey" method="POST">
-      <br>
-      <br>
-    <div class="card-deck">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Car Ownership</h5>
-      <p class="card-text">Do you own a car?</p>
-      <select id="mySelect">
-             <option value="Yes">Yes</option>
-             <option value="No">No</option>
-       </select>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Parking</h5>
-      <p class="card-text">Do you pay for parking</p>
-      <input id="allow-drinks" type="checkbox"/>
-       <label for="parkingPayment">How much do you pay for parking per month? </label></br>
-       <select id="drink-select" disabled>
-      <option value="1">Water</option>
-      <option value="2">Beer</option>
-      <option value="3">Pepsi</option>
-      <option value="4">Whisky</option>
-    </select>
-     <input type="text" name="parkingPayment" placeholder="" />
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Insurance</h5>
-      <p class="card-text">Do you pay for car insurance?</p>
-      <select name="insuranceBoolean">
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-        </select>
-        <label for="insurancePayment">How much do you pay for car insurance per month? </label></br>
-        <input type="text" name="insurancePayment" placeholder=""  />
-    </div>
-  </div>
-</div>
-<br>
-<br>
-<div class="card-deck">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Fuel</h5>
-      <p class="card-text">Do you pay for diesel/gas/supercharging? </p>
-      <select name="powerBoolean">
+{{> nav}}
+<h1>Car Survey</h1>
+<div class="container">
+    <form action="/survey" method="POST">
+        <br>
+        <br>
+        <div class="form-group">
+            <h5>Car Ownership</h5>
+            <p>Do you own a car?</p>
+            <select class="form-control">
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
-          </select>
-          <label for="powerPayment">How much do you pay for diesel/gas/supercharging per month? </label></br>
-           <input type="text" name="powerPayment" placeholder="" /><br/>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Work</h5>
-      <p class="card-text">Do you work from home? </p>
-      <select name="workBoolean">
-           <option value="Yes">Yes</option>
-           <option value="No">No</option>
-     </select>
-     <label for="carWorkBoolean">Do you use your car for work? </label></br>
-<select name="carWorkBoolean">
-    <option value="Yes">Yes</option>
-    <option value="No">No</option>
-</select>
-<br>
-<label for="workMiles">How far do you travel for work per month in miles? </label></br>
-<input type="text" name="workMiles" placeholder="" /><br/>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Vacation</h5>
-      <p class="card-text">Do you drive a car for vacations? </p>
-      <select name="vacationBoolean">
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-      </select>
-      <label for="vacationFrequency">How often do you travel for vacations per month? </label></br>
-        <input type="text" name="vacationFrequency" placeholder="" /><br/>
-        <label for="vacationMiles">How far do you travel in miles for vacations per day? </label></br>
-        <input type="text" name="vacationMiles" placeholder="" /><br/>
-    </div>
-  </div>
-</div>
-
-      </form>
-  </div>
+            </select>
+        </div>
+        <div class="form-group">
+        <h5>Parking</h5>
+            <p>Do you pay for parking</p>
+            <select class="form-control">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="parkingPayment">How much do you pay for parking per month? </label></br>
+            <input type="text" name="parkingPayment" class="form-control" placeholder="" />
+        </div>
+        <h5>Insurance</h5>
+        <div class="form-group">
+            <p>Do you pay for car insurance?</p>
+            <select class="form-control" name="insuranceBoolean">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="insurancePayment">How much do you pay for car insurance per month? </label></br>
+            <input type="text" class="form-control" name="insurancePayment" placeholder="" />
+        </div>
+        <div class="form-group">
+            <h5>Fuel</h5>
+            <p>Do you pay for diesel/gas/supercharging? </p>
+            <select class="form-control" name="powerBoolean">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="powerPayment">How much do you pay for diesel/gas/supercharging per month? </label></br>
+            <input type="text" class="form-control" name="powerPayment" placeholder="" /><br />
+        </div>
+        <div class="form-group">
+            <h5>Work</h5>
+            <p>Do you work from home? </p>
+            <select class="form-control" name="workBoolean">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="carWorkBoolean">Do you use your car for work? </label></br>
+            <select class="form-control" name="workBoolean">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="workMiles">How far do you travel for work per month in miles? </label></br>
+            <input type="text" class="form-control" name="workMiles" placeholder="" /><br />
+        </div>
+        <div class="form-group">
+            <h5>Vacation</h5>
+            <p>Do you drive a car for vacations? </p>
+            <select class="form-control" name="vacationBoolean">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="vacationFrequency">How often do you travel for vacations per month? </label></br>
+            <input type="text" class="form-control" name="vacationFrequency" placeholder="" /><br />
+        </div>
+        <div class="form-group">
+            <label for="vacationMiles">How far do you travel in miles for vacations per day? </label></br>
+            <input type="text" class="form-control" name="vacationMiles" placeholder="" /><br />
+        </div>
+    </form>
 </div>
